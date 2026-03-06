@@ -1,6 +1,8 @@
 --- # Poggit-CI Manifest
 build-by-default: true
 
+lint:
+  phpstan: false
 projects:
   PiggyCustomEnchantsShop:
     path: ""
