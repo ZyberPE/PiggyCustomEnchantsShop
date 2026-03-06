@@ -1,19 +1,9 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/DaPigGuy/PiggyCustomEnchantsShop
-branches:
-  - master
-  - main
+--- # Poggit-CI Manifest
 build-by-default: true
 
 projects:
   PiggyCustomEnchantsShop:
     path: ""
     libs:
-      - src: CortexPE/Commando/Commando
-        version: ^3.0.0
       - src: jojoe77777/FormAPI/libFormAPI
         version: ^2.1.0
-      - src: DaPigGuy/libPiggyEconomy/libPiggyEconomy
-        version: ^2.0.0
-    lint:
-      phpstan: false
-...
