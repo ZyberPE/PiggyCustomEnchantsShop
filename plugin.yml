@@ -7,35 +7,36 @@ author: DaPigGuy
 depend: ["PiggyCustomEnchants"]
 softdepend: ["EconomyAPI", "MultiEconomy"]
 website: "https://github.com/DaPigGuy/PiggyCustomEnchantsShop/"
+
 permissions:
   piggycustomenchantsshop:
+    description: Allows usage of all PiggyCustomEnchantsShop features
     default: op
-    description: "Allows usage of all PiggyCustomEnchantsShop features"
-    children:
-      piggycustomenchantsshop.command:
-        default: op
-        description: "Allow usage of all PiggyCustomEnchantsShop commands"
-        children:
-          piggycustomenchantsshop.command.ceshop:
-            default: op
-            description: "Allow usage of both /ceshop & /ceshop add"
-            children:
-              piggycustomenchantsshop.command.ceshop.add:
-                default: op
-                description: "Allow usage of /ceshop add"
-              piggycustomenchantsshop.command.ceshop.use:
-                default: true
-                description: "Allow usage of /ceshop"
-      piggycustomenchantsshop.sign:
-        description: "Allows usage of all sign shop features"
-        default: op
-        children:
-          piggycustomenchantsshop.sign.break:
-            default: op
-            descriptiom: "Allows breaking of sign shops"
-          piggycustomenchantsshop.sign.create:
-            default: op
-            description: "Allows creation of sign shops"
-          piggycustomenchantsshop.sign.use:
-            default: true
-            description: "Allows usage of sign shops"
+
+  piggycustomenchantsshop.command:
+    description: Allow usage of all PiggyCustomEnchantsShop commands
+    default: op
+
+  piggycustomenchantsshop.command.ceshop:
+    description: Allow usage of /ceshop
+    default: true
+
+  piggycustomenchantsshop.command.ceshop.add:
+    description: Allow usage of /ceshop add
+    default: op
+
+  piggycustomenchantsshop.sign:
+    description: Allows usage of all sign shop features
+    default: op
+
+  piggycustomenchantsshop.sign.break:
+    description: Allows breaking of sign shops
+    default: op
+
+  piggycustomenchantsshop.sign.create:
+    description: Allows creation of sign shops
+    default: op
+
+  piggycustomenchantsshop.sign.use:
+    description: Allows usage of sign shops
+    default: true
